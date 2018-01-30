@@ -1,2 +1,2 @@
 # my-app
-my-app(https://www.angular.cn/guide/quickstart的实现)
+https://www.angular.cn/guide/quickstart的实现
