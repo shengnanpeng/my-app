@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router,
+         NavigationExtras }                 from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'My First Angular App!!';
+  constructor(private router: Router) {}
+  title = 'FS Hybrid IM!!';
+
+  checkLogin()
+  {
+    console.log("psn is here");
+    // Create a dummy session id
+    let sessionId = 123456789;
+
+    let navigationExtras: NavigationExtras = {
+      queryParams: { 'session_id': sessionId },
+      fragment: 'anchor'
+    };
+
+    this.router.navigate(['/login'], navigationExtras);
+  }
 }
