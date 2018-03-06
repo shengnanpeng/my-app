@@ -19,6 +19,7 @@ const SPAroutes: Routes = [
     path: '',
     children: []
   },
+  { path: '', redirectTo:'/login', pathMatch: 'full'},
   { path: 'login', component: LoginPageComponent}
 ];
 

@@ -9,7 +9,7 @@ import { Router,
 })
 export class AppComponent {
   constructor(private router: Router) {}
-  title = 'FS Hybrid IM!!';
+  title = 'your friend miss IM';
 
   checkLogin()
   {
@@ -22,6 +22,7 @@ export class AppComponent {
       fragment: 'anchor'
     };
 
-    this.router.navigate(['/login'], navigationExtras);
+    //this.router.navigate(['/login'], navigationExtras);
+    window.location.href = '/login'
   }
 }

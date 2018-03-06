@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
+import { Input } from '@angular/core';
 
 @Component({
   selector: 'app-login-page',
@@ -10,6 +11,9 @@ import { Meta, Title } from '@angular/platform-browser';
 
 
 export class LoginPageComponent implements OnInit {
+
+  @Input() imTitle:string;
+  
   user:any={
     username:"angular",
     password:""
