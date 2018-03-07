@@ -6,7 +6,7 @@ html {
     position: fixed;
     width: 100%;
     top: 50px;
-    height: 1500px;
+    height: 90%;
     padding: 0 50px;
     box-sizing: border-box;
     background-color: transparent;
@@ -23,7 +23,7 @@ html {
 }
 
 .im-dialog-title {
-    height: 20%;
+    height: 30%;
     width: 100%;
     box-shadow: 0 10px 2px rgba(27,25,27,.6); 
     border-radius: 20px;
@@ -47,6 +47,28 @@ html {
 
 .im-talk-area {
     height: 80%;
+}
+
+.im-talk-area input.input-name {
+    width: 10%;
+    margin-left: 20px;
+    margin-right: 0;
+    position: relative;
+    bottom: 0;
+    margin-top: 5%;
+    height: 3%;
+    border-radius: 5px;
+}
+
+.im-talk-area input.input-password {
+    width: 10%;
+    margin-left: 20px;
+    margin-right: 0;
+    position: relative;
+    bottom: 0;
+    margin-top: 2%;
+    height: 3%;
+    border-radius: 5px;
 }
 
 .im-dialog-close {
@@ -161,3 +183,10 @@ li.right-li {
     background-size: 60% 60%;
     background-position: 50% 50%;
 }
+
+.row-item {
+    align-items: center;
+    display: flex;
+    padding-left: 20%;
+    padding-top: 10%;
+  }

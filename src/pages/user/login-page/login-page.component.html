@@ -10,14 +10,35 @@
                 <div class="im-title-button-area">
                 </div>
             </div>
-            <div class="im-dialog-target-head">
+           <div class="im-dialog-target-head">
             </div>
-            <div id="talk-area" class="im-talk-area">
-                    <input [value]="user.username" (keyup)="onKey($event,'username')" placeholder="请输入用户名/手机">
-                    <br>
-                    <input [value]="user.password" (keyup)="onKey($event,'password')"  type="password" placeholder="请输入密码">
-                    <br>
-                    <button (click)="login()">登陆</button>
+  <!--            <div class="im-talk-area">
+                <input class="input-name" [value]="user.username" (keyup)="onKey($event,'username')" placeholder="请输入用户名/手机">
+                <br>
+                <input class="input-password" [value]="user.password" (keyup)="onKey($event,'password')"  type="password" placeholder="请输入密码">
+                <br>
+                <button class="smt-btn" (click)="login()">登陆</button>
+            </div>-->
+
+            <div class="im-talk-area">
+                <div>
+                    <div class="row-item">
+                        <div class="row-item-width">username : </div>
+                        <input type="text" class="input-item user-mng-no-width display-single-line" maxlength="50" [value]="user.username" (keyup)="onKey($event,'username')" placeholder="请输入用户名/手机"/>
+                    </div>
+                    <div class="row-item item-padding-left">
+                        <div class="row-item-width">password : </div>
+                        <input type="password" class="input-item user-mng-no-width display-single-line" maxlength="16" [value]="user.password" (keyup)="onKey($event,'password')"  type="password" placeholder="请输入密码"/>
+                    </div>
+                    <button class="smt-btn" (click)="login()">登陆</button>
+                </div>
+            
+            
+<!--                 <div class="round-button-wrapper">
+                    <button class="round-button no-shadow" ng-click="loginPage.login()">
+                        {{label.auth.login.loginButtonText}}
+                    </button>
+                </div>-->
             </div>
         </div>
 

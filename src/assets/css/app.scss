@@ -1,0 +1,9 @@
+// Entry point for scss
+
+// ----- Common ------
+//@import './variables';
+//@import './mixin';
+
+// ----- Global Parts ------
+@import './style';
+//@import './mockup';    // モック表示用のcss、本番運用では不要
